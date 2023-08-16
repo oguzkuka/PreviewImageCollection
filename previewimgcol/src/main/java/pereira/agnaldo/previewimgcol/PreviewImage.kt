@@ -143,8 +143,7 @@ internal class PreviewImage(private val context: Context) {
                 imageBitmap
             }
             imageUri != null -> {
-                imageBitmap = MediaStore.Images.Media.getBitmap(context.contentResolver, imageUri)
-                imageBitmap
+                null
             }
             else -> {
                 null
